@@ -1,3 +1,4 @@
+
 const startButton = document.getElementById('start-btn')
 const nextButton = document.getElementById('next-btn')
 const questionContainerElement = document.getElementById('question-container')
@@ -25,6 +26,7 @@ function setNextQuestion() {
   showQuestion(shuffledQuestions[currentQuestionIndex])
 }
 
+// button prompts with click functionality 
 function showQuestion(question) {
   questionElement.innerText = question.question
   question.answers.forEach(answer => {
@@ -61,7 +63,7 @@ function selectAnswer(e) {
     startButton.classList.remove('hide')
   }
 }
-
+// if else statement fucntion 
 function setStatusClass(element, correct) {
   clearStatusClass(element)
   if (correct) {
@@ -75,7 +77,7 @@ function clearStatusClass(element) {
   element.classList.remove('correct')
   element.classList.remove('wrong')
 }
-
+// unchangeable questions array 
 const questions = [
   {
     question: 'What is 2 + 2?',

@@ -7,7 +7,7 @@
     --hue-wrong: 0;
     --hue-correct: 145;
   }
-  
+  /* body style */
   body {
     --hue: var(--hue-neutral);
     padding: 0;
@@ -19,15 +19,15 @@
     align-items: center;
     background-color: hsl(var(--hue), 100%, 20%);
   }
-  
+  /* correct hue */
   body.correct {
     --hue: var(--hue-correct);
   }
-  
+  /* incorrect hue */
   body.wrong {
     --hue: var(--hue-wrong);
   }
-  
+  /* main container  */
   .container {
     width: 800px;
     max-width: 80%;
